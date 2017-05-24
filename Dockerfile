@@ -9,5 +9,5 @@ RUN ["mvn", "dependency:resolve"]
 RUN ["mvn", "verify"]
 
 ADD src  /data/src
-RUN ["mvn", "jetty:run", "-Djetty.port=9999"]
+RUN ["mvn", "jetty:run"]
 
